@@ -29,6 +29,7 @@ html, body {
   font-size: 14px;
   line-height: 16px;
   color: $brand-green;
+  overflow-x: hidden;
 }
 
 fieldset {
@@ -53,6 +54,10 @@ a {
   text-decoration: none;
   color: $brand-blue;
   cursor: pointer;
+
+  &:hover {
+    transition: color $transition
+  }
 }
 
 p {

@@ -1,8 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
 //Common styles for elements
 .card {
   border: none
 }
 
+//Texts
 .txt {
   &-blue {
     color: $brand-blue
@@ -11,10 +15,27 @@
   &-white {
     color: #FFF
   }
+
+  &-dark {
+    color: $brand-green
+  }
 }
 
+.link-dark {
+  color: $brand-green;
+
+  &:hover {
+    color: $brand-blue
+  }
+}
+
+//Titles
 .title {
   &-1 {
     @include font(23px, 500, 1.2)
+  }
+
+  &-2 {
+    @include font(16px, 500, 1.1)
   }
 }

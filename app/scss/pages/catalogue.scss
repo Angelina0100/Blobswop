@@ -1,5 +1,14 @@
+@import "../variables";
+@import "../mixins";
+
 //Section with catalogue
 .catalogue {
+
+  &-title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
   &-item {
     margin-bottom: 30px;
   }
@@ -50,6 +59,10 @@
     padding: 50px 80px;
     border-radius: 10px;
 
+    @include media-breakpoint-down(md) {
+      padding: 25px 20px;
+    }
+
     &__description {
       margin-bottom: 40px
     }
@@ -67,13 +80,20 @@
     &__img {
       max-width: 230px;
       height: 170px;
-      border-radius: 3px
+      border-radius: 3px;
     }
 
     &:nth-of-type(2n + 1) {
       .info-block__img {
         float: left;
         margin: 4px 18px 5px 0;
+        @include media-breakpoint-down(sm) {
+          float: none;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          height: auto;
+        }
       }
     }
 
@@ -81,6 +101,14 @@
       .info-block__img {
         float: right;
         margin: 4px 0 5px 18px;
+
+        @include media-breakpoint-down(sm) {
+          float: none;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          height: auto;
+        }
       }
     }
 
@@ -98,7 +126,13 @@
   padding-bottom: 40px;
 
   &-title {
+    margin-bottom: 0;
     padding-right: 120px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+      padding-right: 0
+    }
   }
 
   &-form {
@@ -119,7 +153,11 @@
     }
 
     &__btn {
-
+      right: 0;
+      top:0;
+      width: 37px;
+      height: 37px;
+      background: url("../../images/icons/sprite.svg#ic-arrow-r") center/15px no-repeat;
     }
   }
 }
@@ -128,5 +166,39 @@
 .socials {
   padding-top: 8px;
   padding-bottom: 8px;
-  background: $brand-green
+  background: $brand-green;
+
+  .title-1 {
+    @include media-breakpoint-down(md) {
+      text-align: center
+    }
+  }
+
+  &-list {
+    width: 170px;
+  }
+
+  &-item {
+    &__link {
+      min-width: 30px;
+      width: 30px;
+      height: 30px;
+
+      &--fb {
+        background: url("../../images/icons/sprite.svg#ic-facebook") center no-repeat
+      }
+
+      &--youtube {
+        background: url("../../images/icons/sprite.svg#ic-youtube") center no-repeat
+      }
+
+      &--pinterest {
+        background: url("../../images/icons/sprite.svg#ic-pinterest") center no-repeat
+      }
+
+      &--insta {
+        background: url("../../images/icons/sprite.svg#ic-insta") center no-repeat
+      }
+    }
+  }
 }

@@ -56,6 +56,7 @@ let { src, dest } = require('gulp'),
     sourcemaps    = require('gulp-sourcemaps'),
     notify        = require('gulp-notify');
 
+let bootsrapFiles = "node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 
 // Создаем окружение
 function browserSync() {
@@ -147,7 +148,7 @@ function cssprod() {
 
 // Собираем JS файлы
 function js() {
-    return src(path.src.js)
+    return src([path.src.js, bootsrapFiles])
         .pipe(fileinclude())
         .pipe(dest(path.build.js))
         .pipe(
@@ -208,11 +209,11 @@ gulp.task('fonts', function () {
 
 // Спрайты для SVG
 gulp.task('svgSprite', function () {
-   return gulp.src([source_folder + '/images/iconsprite/*.svg'])
+   return gulp.src([source_folder + '/images/icons/*.svg'])
        .pipe(svgSprite({
            mode: {
                stack: {
-                   sprite: '../icons.svg',
+                   sprite: '../sprite.svg',
                    example: true
                }
            }
