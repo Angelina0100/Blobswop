@@ -12,8 +12,14 @@
 <header class="header">
     <div class="container">
         <div class="row header-top">
-            <div class="col-9 d-flex">
-                <a class="header-top__logo-link d-block" href="https://letmeprint.de/" title="LETMEPRINT GmbH">
+            <div class="col-lg-9 d-flex flex-wrap flex-lg-nowrap align-items-center">
+                <button type="button" class="header-burger d-block d-lg-none js-burger" aria-label="Dropdown menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a class="header-top__logo-link mx-auto mx-lg-0 d-block" href="https://letmeprint.de/" title="LETMEPRINT GmbH">
                     <picture>
                         <source media="(max-width: 1024px)" srcset="images/promo/logo-mob.png">
                         <img class="header-top__img" src="images/promo/logo-desc.png" alt="LETMEPRINT GmbH">
@@ -22,19 +28,19 @@
 
                 <form method="POST" class="header-top__form d-flex">
                     <input class="form-control" type="search" aria-label="Search" name="searchInput">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Suche</button>
+                    <button class="btn btn-secondary" type="submit">Suche</button>
                 </form>
             </div>
-            <div class="header-top__options header-options col-3 d-flex align-items-center">
-                <div class="header-options__item header-options__item--msg"><a href="!#" class="txt-dark">Mitteilungen</a></div>
+            <div class="header-top__options header-options col-lg-3 d-flex align-items-center pt-2 pt-lg-0 pb-2 pb-lg-0">
+                <div class="header-options__item header-options__item--msg ms-auto ms-lg-0"><a href="!#" class="txt-dark">Mitteilungen</a></div>
                 <div class="header-options__item header-options__item--notifications"><a href="!#" class="txt-dark">Merken</a></div>
-                <div class="header-options__account"><a href="!#" class="d-block"><img src="images/icons/sprite.svg#ic-account" alt="Account"/></a></div>
+                <div class="header-options__account me-auto me-lg-0"><a href="!#" class="d-block"><img src="images/icons/sprite.svg#ic-account" alt="Account"/></a></div>
             </div>
         </div>
 
-        <div class="row header-middle">
-            <nav class="col-9 navbar navbar-expand-lg">
-                <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <div class="row header-middle js-menu">
+            <nav class="col-lg-9 navbar navbar-expand-lg align-items-start align-items-lg-center">
+                <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
                     <li class="nav-item active">
                         <a class="nav-link link-dark" href="#">Print it</a>
                     </li>
@@ -89,8 +95,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Bierdeckel</h3>
-                                <p class="card-info__text">Bierdeckel erhalten Sie in allen nur erdenklichen Varianten. Suchen Sie sich ein Motiv aus, wir bedrucken Ihren Untersetzer für Sie. Gestalten Sie in unserem Shop individuelle Bierdeckel als Werbemittel. Oder bringen Sie Ihre Gäste mit originellen Bierdeckeln zum Schmunzeln.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">Bierdeckel erhalten Sie in allen nur erdenklichen Varianten. Suchen Sie sich ein Motiv aus, wir bedrucken Ihren Untersetzer für Sie. Gestalten Sie in unserem Shop individuelle Bierdeckel als Werbemittel. Oder bringen Sie Ihre Gäste mit originellen Bierdeckeln zum Schmunzeln.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -108,8 +114,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Glasuntersetzer</h3>
-                                <p class="card-info__text">Gestalten Sie bei uns Ihre eigenen Glasuntersetzer. Wir bieten Ihnen verschiedene Materialien, Farben und Formate an. In unserem Sortiment finden Sie auch Filzuntersetzer, Bierdeckel sowie Untersetzer aus Silikon, Kork, Holz und Edelstahl.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">Gestalten Sie bei uns Ihre eigenen Glasuntersetzer. Wir bieten Ihnen verschiedene Materialien, Farben und Formate an. In unserem Sortiment finden Sie auch Filzuntersetzer, Bierdeckel sowie Untersetzer aus Silikon, Kork, Holz und Edelstahl.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -127,8 +133,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Mousepad</h3>
-                                <p class="card-info__text">Wer einmal ein anderes Werbemittel sucht, der findet in unserem Online-Shop eine große Auswahl an Mousepads, welche wir exklusiv mit Ihrer Werbebotschaft bedrucken. Nutzen Sie ein Maus Pad als Geschenk oder verteilen Sie dieses im Büro.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">Wer einmal ein anderes Werbemittel sucht, der findet in unserem Online-Shop eine große Auswahl an Mousepads, welche wir exklusiv mit Ihrer Werbebotschaft bedrucken. Nutzen Sie ein Maus Pad als Geschenk oder verteilen Sie dieses im Büro.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -146,8 +152,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Getränkedosen</h3>
-                                <p class="card-info__text">Mit einem Getränk in einer Dose mit Ihrem Logo bedruckt machen Sie Werbung wie die ganz Großen. Sorgen Sie wie die Großkonzerne Coca Cola oder Red Bull für Aufmerksamkeit, die niemand so schnell vergessen wird.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">Mit einem Getränk in einer Dose mit Ihrem Logo bedruckt machen Sie Werbung wie die ganz Großen. Sorgen Sie wie die Großkonzerne Coca Cola oder Red Bull für Aufmerksamkeit, die niemand so schnell vergessen wird.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -164,8 +170,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Schreibtischunterlage</h3>
-                                <p class="card-info__text">Eine Schreibunterlage bietet Schutz für Ihren Schreibtisch. Darüber hinaus profitieren Sie von einem hohen Komfort. Verschiedene Größen, Farben und Designs sorgen dafür, dass für jeden die passende Unterlage in unserem Online-Shop erhältlich ist.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">Eine Schreibunterlage bietet Schutz für Ihren Schreibtisch. Darüber hinaus profitieren Sie von einem hohen Komfort. Verschiedene Größen, Farben und Designs sorgen dafür, dass für jeden die passende Unterlage in unserem Online-Shop erhältlich ist.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -182,8 +188,8 @@
                         <div class="card-body">
                             <div class="card-info text-left">
                                 <h3 class="card-info__title">Fototasse</h3>
-                                <p class="card-info__text">In unserem Sortiment finden Sie individuelle Fototassen in verschiedenen Farben und vielen Designs. Verschönern Sie Ihre Fototasse mit dem eigenen Foto oder lustigen Motiven. Wir liefern schnell und zu günstigen Preisen.</p>
-                                <button type="button">Mehr</button>
+                                <p class="card-info__text js-cardText">In unserem Sortiment finden Sie individuelle Fototassen in verschiedenen Farben und vielen Designs. Verschönern Sie Ihre Fototasse mit dem eigenen Foto oder lustigen Motiven. Wir liefern schnell und zu günstigen Preisen.</p>
+                                <button type="button" class="card-info__btn-show d-block mx-auto txt-blue js-showMore">Mehr</button>
                             </div>
                             <a href="!#" class="card-link d-block">Zur Auswahl</a>
                         </div>
@@ -390,8 +396,10 @@
         </div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/app.js" ></script>
 </body>
 </html>
