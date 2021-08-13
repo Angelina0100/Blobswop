@@ -1,0 +1,58 @@
+//Fonts
+@mixin font($fs, $fw, $lh, $fc: null) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $fc
+}
+
+//Inputs
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin clearCross {
+  &::-ms-clear {
+    width: 0;
+    height: 0;
+    display: none
+  }
+
+  &::-ms-reveal {
+    width: 0;
+    height: 0;
+    display: none
+  }
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+    appearance: none;
+  }
+}
+
+//Position
+@mixin absolute($top: null, $right: null, $bottom: null, $left:null) {
+  position: absolute;
+  content: '';
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
