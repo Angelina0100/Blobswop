@@ -1,0 +1,94 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixins";
+@import "../fonts/fonts";
+@import "common/common";
+@import "common/header";
+@import "common/footer";
+@import "pages/catalogue";
+
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $brand-green;
+  overflow-x: hidden;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+input, textarea {
+  border: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $brand-blue;
+  cursor: pointer;
+
+  &:hover {
+    transition: color $transition
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  @include font(29px, 600, 1.1)
+}
+
+h2 {
+  @include font(25px, 500, 1.1)
+}
+
+h3 {
+  @include font(23px, 600, 1.1)
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-left: unset;
+}
