@@ -34,4 +34,10 @@
   line-height: 1.1;
 }
 
+.btn-secondary {
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  color: #214154;
+}
+
 /*# sourceMappingURL=../../maps/common/common.css.map */

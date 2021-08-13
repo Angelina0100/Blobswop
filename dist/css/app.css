@@ -12160,6 +12160,12 @@ fieldset:disabled .btn {
   line-height: 1.1;
 }
 
+.btn-secondary {
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  color: #214154;
+}
+
 .header {
   min-height: 100px;
 }
@@ -12239,7 +12245,7 @@ fieldset:disabled .btn {
 .header-top__form .form-control {
   min-width: inherit;
   width: 100%;
-  border: 1px solid #9A9A9A !important;
+  border: 1px solid #e8e8e8 !important;
   font-size: 14px;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -12248,7 +12254,11 @@ fieldset:disabled .btn {
   padding-left: 12px;
   padding-right: 12px;
   text-align: left;
-  border-radius: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.header-top__form .btn {
+  border-radius: 0 3px 3px 0;
 }
 
 @media (max-width: 991.98px) {
