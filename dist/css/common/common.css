@@ -1,0 +1,37 @@
+.card {
+  border: none;
+}
+
+.txt-blue {
+  color: #337ab7;
+}
+
+.txt-white {
+  color: #FFF;
+}
+
+.txt-dark {
+  color: #214154;
+}
+
+.link-dark {
+  color: #214154;
+}
+
+.link-dark:hover {
+  color: #337ab7;
+}
+
+.title-1 {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title-2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/*# sourceMappingURL=../../maps/common/common.css.map */
